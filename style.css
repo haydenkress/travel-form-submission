@@ -2,9 +2,59 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    background-color: #eeeeee;
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
     height: 100vh;
+}
+
+.sign-up-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.CTA {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    padding: 40px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.form-fields {
+    display: flex;
+    gap: 50px;
+}
+
+.form-and-heading {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons {
+    padding: 40px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    display: block;
 }
 
