@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap');
+
 body {
     display: flex;
     margin: 0;
@@ -21,8 +23,9 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 500px;
+    width: 750px;
     padding: 40px;
+    font-size: 30px;
 }
 
 .form-section {
@@ -38,14 +41,19 @@ img {
 
 .form-and-heading {
     background-color: white;
-    padding: 40px;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 .buttons {
-    padding: 40px;
+    padding: 20px;
+}
+
+.header {
+    font-size: 25px;
 }
 
 .column {
@@ -56,5 +64,19 @@ img {
 
 label {
     display: block;
+    font-size: 10px;
+    font-weight: 400;
+}
+span {
+    font-style: italic;
+}
+
+button {
+    padding: 12px;
+    background-color: #76B1D3;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 10px;
 }
 
