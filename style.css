@@ -41,7 +41,7 @@ img {
 
 .form-and-heading {
     background-color: white;
-    padding: 20px 40px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -49,7 +49,8 @@ img {
 }
 
 .buttons {
-    padding: 20px;
+    margin: 20px;
+    margin-left: 40px;
 }
 
 .header {
@@ -64,7 +65,7 @@ img {
 
 label {
     display: block;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 400;
 }
 span {
@@ -73,10 +74,55 @@ span {
 
 button {
     padding: 12px;
-    background-color: #76B1D3;
+    background-color: #EF826C;
     color: white;
-    border-radius: 30px;
+    border-radius: 4px;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
+input {
+    appearance: none;
+    outline: none;
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-color: #ECEEF0;
+    border-style: solid;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input:focus {
+    box-shadow: 0px 3px 3px 0px lightgray;
+    border-width: 0.1rem;
+}
+
+input:focus:invalid {
+    border-color: #D16662;
+    background-color: #fff;
+}
+
+input:focus:valid {
+    border-color: #8BC34A;
+}
+
+input:required:not(:placeholder-shown):invalid {
+    background-color: rgba(185, 35, 38, 0.25);
+  }
+  
+  input:required:valid,
+  input:required:not(:placeholder-shown):invalid:focus {
+    background-color: rgba(139, 195, 74, 0.25);
+  }
+
+a {
+    color: #EF826C;
+}
