@@ -54,7 +54,8 @@
                     </div>
                     <div>
                         <label for="confirm-password">Confirm Password *</label>
-                        <input type="password" id="confirm-password" required placeholder="Confirm Password">
+                        <input type="password" id="confirm-password" required placeholder="Confirm Password" onkeyup="validatePassword()">
+                        <div id="alert"></div>
                     </div> 
                 </div>
             </div>
@@ -70,4 +71,19 @@
         </div>  
     </div>
 </body>
+<script>
+    function validatePassword() {
+        var pass = document.getElementById('password').value;
+        var confirm_pass = document.getElementById('confirm-password').value;
+        if (pass != confirm_pass) {
+            document.getElementById('alert').style.color = 'red';
+            document.getElementById('alert').innerHTML
+              = 'Passwords don\'t match.';
+        } else {
+            document.getElementById('alert').style.color = 'green';
+            document.getElementById('alert').innerHTML =
+                'Passwords match.';
+        }
+    }
+</script>
 </html>
