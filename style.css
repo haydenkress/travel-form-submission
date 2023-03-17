@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: #eeeeee;
     font-family: 'Roboto', sans-serif;
+    flex: auto;
 }
 
 img {
@@ -16,27 +17,29 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
+    flex: auto; 
 }
 
 .CTA {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     gap: 20px;
-    width: 750px;
-    padding: 40px;
+    max-width: 750px;
+    margin: 40px;
     font-size: 30px;
 }
 
 .form-section {
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    flex: auto;
 }
 
 .form-fields {
     display: flex;
-    gap: 50px;
+    gap: 10px;
+    flex: auto;
+    flex-direction: column;
 }
 
 .form-and-heading {
@@ -45,7 +48,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: space-between;
+    height: fit-content;
 }
 
 .buttons {
@@ -57,12 +60,32 @@ img {
     font-size: 25px;
 }
 
-.column {
+.row {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 50px;
+}
+/* responsive design */
+@media only screen and (max-width: 1150px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .form-fields {
+        display: flex;
+        gap: 30px;
+        flex: auto;
+        flex-direction: column;
+    }
+    img {
+        display: none;
+    }
 }
 
+
+
+/* form stuff */
 label {
     display: block;
     font-size: 15px;
